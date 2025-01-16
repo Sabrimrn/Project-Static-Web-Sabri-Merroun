@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin/images/css/filmtoevoegen.css">
+    <title>Film Aanpassen</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/frontend.html">Home</a></li>
+                <li><a href="/admin/admin.html">Admin</a></li>
+                <li><a href="/admin/filmoverzicht.html">Filmoverzicht</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <h1>Film Aanpassen</h1> 
+        <form> 
+            <label for="titel">Titel:</label> 
+            <input value="Rush Hour" id="titel" name="titel" required> 
+            <br> 
+            <label for="genre">Genre:</label> 
+            <input value="Comedy/Actie" id="genre" name="genre" required> 
+            <br> 
+            <label for="regisseur">Regisseur:</label> 
+            <input value="Brett Ratner" id="regisseur" name="regisseur" required> 
+            <br> 
+            <label for="jaar">Jaar:</label> 
+            <input value="1998" id="jaar" name="jaar" required> 
+            <br> 
+            <p>Plot</p>
+            <textarea name="Plot"
+                cols="20" rows="4">
+                Inspecteur Lee, de trots van de Hongkongse politie, reist naar Los Angeles, waar de elfjarige dochter van de Chinese consul werd ontvoerd. De FBI zit niet te wachten op een bemoeizieke buitenstaander en zet agent James Carter in om op Lee te passen.
+            </textarea>
+            <button type="submit">Opslaan</button> 
+        </form> 
+    </main>
+</body>
+</html>

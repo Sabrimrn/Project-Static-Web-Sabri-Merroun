@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+header, footer { 
+    background-color: black; 
+    color: white; 
+    padding: 10px; 
+    margin: 0; text-align: center; 
+} 
+
+nav ul { 
+    list-style-type: none; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+} 
+
+nav ul li { 
+    margin: 0 15px; 
+} 
+
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+} 
+
+.intro { 
+    padding: 20px; 
+    text-align: center; 
+    color: rgb(29, 1, 1); 
+    background-color: #8f8e8e; 
+} 
+
+.intro h1 { 
+    font-family: "Source Serif 4", serif; 
+    margin: 0; 
+    font-size: 2em; 
+} 
+
+.intro p { 
+    font-family: "Roboto Flex", serif; 
+    margin: 10px 0 0; 
+    font-size: 1.2em; 
+} 
+
+.filmblok { 
+    padding: 20px; 
+    text-align: center; 
+    background-color: #8f8e8e; 
+} 
+
+.filmblok h2 { 
+    color: white; 
+} 
+
+.films { 
+    display: flex; 
+    margin-top: 50px; 
+    flex-wrap: wrap; justify-content: center; 
+} 
+
+.film1, .film2, .film3, .film4, .film5 { 
+    background-color: rgba(174, 0, 0, 0.675); 
+    border-radius: 10%; 
+    box-sizing: border-box; 
+    justify-items: center; 
+    padding: 25px; 
+    margin: 15px; 
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */ 
+} 
+
+.film1 img, .film2 img, .film3 img, .film4 img, .film5 img { 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+
+.film1 h3, .film2 h3, .film3 h3, .film4 h3, .film5 h3 { 
+    color: white; 
+} 
+
+/* Media queries voor mobiele apparaten */ 
+@media (max-width: 768px) { 
+    nav ul { 
+        flex-direction: column; 
+        padding: 0; 
+    } 
+    nav ul li { 
+        margin: 10px 0; 
+    } 
+    .films { 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+    .film1, .film2, .film3, .film4, .film5 { 
+        flex: 1 1 100%; 
+        margin: 10px 0; 
+    } 
+}
