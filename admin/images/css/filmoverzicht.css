@@ -69,3 +69,26 @@ input[type="text"]{
     border: 1px solid #ccc; 
     border-radius: 5px;
 }
+
+@media (max-width: 768px) { 
+    nav ul { 
+        flex-direction: column; 
+        padding: 0; 
+    } 
+    nav ul li { 
+        margin: 10px 0; 
+    } 
+    main { 
+        padding: 10px; 
+    } 
+    button { 
+        width: 100%; 
+    } 
+    table { 
+        width: 100%; 
+        overflow-x: auto; 
+    } 
+    input[type="text"] { 
+        width: calc(100% - 22px); 
+    } 
+}

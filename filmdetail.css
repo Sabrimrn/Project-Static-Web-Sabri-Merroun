@@ -1,44 +1,44 @@
-body {
-    background-color: #8f8e8e;
-}
+body { 
+    background-color: #8f8e8e; 
+} 
 
-.filminfo {
-    color: black;
-    justify-items: center;
-}
+.filminfo { 
+    color: black; 
+    justify-items: center; 
+} 
 
-header, footer {
-    background-color:black; 
-    color:white; 
-    padding:10px; 
-    text-align: center;
-}
+header, footer { 
+    background-color: black; 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+} 
 
 nav ul { 
     list-style-type: none; 
     padding: 10px; 
     display: flex; 
-    justify-content: center;
-}
+    justify-content: center; 
+} 
 
 nav ul li { 
-    margin:0 15px; 
-}
+    margin: 0 15px; 
+} 
 
 nav ul li a { 
     color: white; 
     text-decoration: none; 
-}
+} 
 
 .detailsfilm { 
     color: white; 
     background-color: #8d0202; 
-    padding: 20px;
+    padding: 20px; 
     width: 50%; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
     font-family: Arial, sans-serif; 
 } 
 
@@ -46,37 +46,56 @@ nav ul li a {
     color: white; 
     background-color: #692e2e; 
     padding: 20px; 
-    width: 50%;
+    width: 50%; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px; 
     font-family: Arial, sans-serif; 
-}
+} 
 
-.gerelateerde-films {
-    color: black;
-    justify-items: center;
-}
+.gerelateerde-films { 
+    color: black; 
+    justify-items: center; 
+} 
 
-.filmgerelateerd {
-    justify-items: center;
-    padding: 15px;
-    margin-top: auto;
-    margin-left:auto ;
-    margin-right: auto;
-    margin-bottom: auto;
-    color: white;
-    display: flex;
-    background-color: black;
-    flex-wrap: wrap; justify-content: center; 
-}
+.filmgerelateerd { 
+    justify-items: center; 
+    padding: 15px; 
+    margin-top: auto; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: auto; 
+    color: white; 
+    display: flex; 
+    background-color: black; 
+} 
 
-.grfilm1, .grfilm2, .grfilm3 {
-    background-color: rgba(174, 0, 0, 0.675);
-    border-radius: 10%;
-    box-sizing: 5px;
-    justify-items: center;
-    padding: 25px;
-    margin: 15px;
-    flex: 1 1 200px;
+.grfilm1, .grfilm2, .grfilm3 { 
+    background-color: rgba(174, 0, 0, 0.675); 
+    border-radius: 10%; 
+    box-sizing: 5px; 
+    justify-items: center; 
+    padding: 25px; 
+    margin: 15px; 
+} 
+
+@media (max-width: 768px) { 
+    nav ul { 
+        flex-direction: column; 
+        padding: 0; 
+    } 
+    nav ul li { 
+        margin: 10px 0; 
+    } 
+    .detailsfilm, .plotreview { 
+        width: 90%; 
+    } 
+    .filmgerelateerd { 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+    .grfilm1, .grfilm2, .grfilm3 { 
+        width: 90%; 
+        margin: 10px 0; 
+    } 
 }

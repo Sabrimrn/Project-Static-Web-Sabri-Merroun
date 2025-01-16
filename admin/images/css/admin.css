@@ -90,3 +90,22 @@ a {
 p { 
     margin: 10px 0; 
 }
+
+@media (max-width: 768px) { 
+    nav ul { 
+        flex-direction: column; 
+        padding: 0; 
+    } 
+    nav ul li { 
+        margin: 10px 0; 
+    } 
+    .fieldset { 
+        width: 80%; 
+    } 
+    input[type="text"], input[type="password"] { 
+        width: calc(100% - 22px); 
+    } 
+    button { 
+        width: 100%; 
+    } 
+}
