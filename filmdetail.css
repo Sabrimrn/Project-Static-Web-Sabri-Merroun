@@ -68,6 +68,7 @@ nav ul li a {
     color: white;
     display: flex;
     background-color: black;
+    flex-wrap: wrap; justify-content: center; 
 }
 
 .grfilm1, .grfilm2, .grfilm3 {
@@ -77,4 +78,5 @@ nav ul li a {
     justify-items: center;
     padding: 25px;
     margin: 15px;
+    flex: 1 1 200px;
 }
